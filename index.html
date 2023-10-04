@@ -42,7 +42,7 @@
             href="https://www.pinterest.es/"
             target="_blank"
             aria-label="Entra a la página principal de Pinterest"
-            role="a"
+            role="link"
           >
             <svg
               height="32"
@@ -55,13 +55,7 @@
                 d="M0 12c0 5.123 3.211 9.497 7.73 11.218-.11-.937-.227-2.482.025-3.566.217-.932 1.401-5.938 1.401-5.938s-.357-.715-.357-1.774c0-1.66.962-2.9 2.161-2.9 1.02 0 1.512.765 1.512 1.682 0 1.025-.653 2.557-.99 3.978-.281 1.189.597 2.159 1.769 2.159 2.123 0 3.756-2.239 3.756-5.471 0-2.861-2.056-4.86-4.991-4.86-3.398 0-5.393 2.549-5.393 5.184 0 1.027.395 2.127.889 2.726a.36.36 0 0 1 .083.343c-.091.378-.293 1.189-.332 1.355-.053.218-.173.265-.4.159-1.492-.694-2.424-2.875-2.424-4.627 0-3.769 2.737-7.229 7.892-7.229 4.144 0 7.365 2.953 7.365 6.899 0 4.117-2.595 7.431-6.199 7.431-1.211 0-2.348-.63-2.738-1.373 0 0-.599 2.282-.744 2.84-.282 1.084-1.064 2.456-1.549 3.235C9.584 23.815 10.77 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12"
               ></path>
             </svg>
-            <h1
-              style="display: inline"
-              aria-label="Título principal de Pinterest"
-              role="h1"
-            >
-              Pinterest
-            </h1>
+            <h1 style="display: inline">Pinterest</h1>
           </a>
         </div>
         <div>
@@ -73,7 +67,7 @@
                     href="https://help.pinterest.com/es/guide/all-about-pinterest"
                     target="_blank"
                     aria-label="Entra aquí para saber cómo usar Pinterest"
-                    role="a"
+                    role="link"
                     >Info</a
                   >
                 </li>
@@ -82,7 +76,7 @@
                     href="https://business.pinterest.com/es/"
                     target="_blank"
                     aria-label="Entra aquí para saber más sobre la empresa que dirige Pinterest"
-                    role="a"
+                    role="link"
                     >Empresa</a
                   >
                 </li>
@@ -91,7 +85,7 @@
                     href="https://newsroom.pinterest.com/es"
                     target="_blank"
                     aria-label="Entra en el blog de Pinterest"
-                    role="a"
+                    role="link"
                     >Blog</a
                   >
                 </li>
@@ -100,9 +94,8 @@
             <li>
               <a
                 href="#bottom"
-                target="_blank"
                 aria-label="Entra aquí para iniciar sesión en Pinterest"
-                role="a"
+                role="link"
               >
                 <button>Iniciar sesión</button>
               </a>
@@ -110,9 +103,8 @@
             <li>
               <a
                 href="#bottom"
-                target="_blank"
                 aria-label="Entra aquí para registrarte en Pinterest"
-                role="a"
+                role="link"
               >
                 <button>Registrarse</button>
               </a>
@@ -125,21 +117,93 @@
       <section></section>
       <section></section>
       <section></section>
-      <section></section>
-      <article>
+      <section>
+        <section>
+          <a
+            href="https://www.pinterest.es/search/pins/?q=tono%20de%20labios"
+            target="_blank"
+            aria-label="Entra aquí para conocer las últimas tendencias de tono de labios"
+            role="link"
+          >
+            <img
+              src="https://s.pinimg.com/webapp/shop-de8ddf10.png"
+              alt="Imagen de una creadora de contenido"
+              width="300px"
+              height="400px"
+              loading="lazy"
+              style="object-fit: cover"
+              aria-label="Imagen de una creadora de contenido"
+              role="img"
+            />
+            <figure>
+              <img
+                src="https://s.pinimg.com/webapp/creator-pin-img-3bed5463.png"
+                alt="Imagen de la creadora"
+                width="220px"
+                height="400px"
+                loading="lazy"
+                style="object-fit: cover"
+                aria-label="Imagen de una creadora de contenido promocionando un producto"
+                role="img"
+              />
+              <img
+                src="https://s.pinimg.com/webapp/creator-avatar-262dfeba.png"
+                alt="Avatar de Scout The City"
+                width="80px"
+                height="80px"
+                loading="lazy"
+                aria-label="Avatar de Scout The City"
+                role="img"
+              />
+              <figcaption
+                aria-label="El nombre del creador de contenido y su número de seguidores en Pinterest"
+                role="figcaption"
+              >
+                <span>Scout The City</span>
+                <span>56 700 seguidores</span>
+              </figcaption>
+            </figure>
+          </a>
+        </section>
+        <section>
+          <section>
+            <h2>Míralo, fabrícalo, pruébalo, hazlo</h2>
+            <p>
+              Lo mejor de Pinterest es descubrir cosas e ideas nuevas de
+              personas de todo el mundo.
+            </p>
+          </section>
+          <a
+            href="https://www.pinterest.es/ideas/belleza/938980608008/"
+            target="_blank"
+            aria-label="Entra aquí para explorar"
+            role="link"
+          >
+            <button>Explorar</button>
+          </a>
+        </section>
+      </section>
+      <article id="bottom">
         <header>
           <h2>Regístrate para ver ideas</h2>
         </header>
         <main>
           <h2>Bienvenido a Pinterest</h2>
           <p>Encuentra nuevas ideas para probar</p>
-          <form>
+          <form
+            action="#"
+            method="POST"
+            name="register"
+            aria-label="Formulario de registro"
+            role="form"
+          >
             <label for="email">Correo</label>
-            <input type="email" id="email" placeholder="Correo" />
+            <input type="email" id="email" name="email" placeholder="Correo" />
             <label for="password">Contraseña</label>
             <input
               type="password"
               id="password"
+              name="password"
               placeholder="Crea una contraseña"
             />
             <label for="dateOfBirth">Fecha de nacimiento</label>
@@ -159,8 +223,8 @@
                 ></path>
               </svg>
             </span>
-            <input type="date" id="dateOfBirth" />
-            <button>Continuar</button>
+            <input type="date" id="dateOfBirth" name="dateOfBirth" />
+            <button type="submit">Continuar</button>
           </form>
           <p>O</p>
           <!-- Los siguientes buttons realmente son iframes que generan links a Facebook y Google respectivamente mediante sendos plugins -->
@@ -170,6 +234,8 @@
                 src="https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/U7MAWJlE6hZ.png"
                 alt="Logo de Facebook"
                 style="background-color: black; width: 25px; height: 25px"
+                aria-label="Logo de Facebook"
+                role="img"
               />
               <p style="display: inline">Continuar con Facebook</p>
             </button>
@@ -180,6 +246,8 @@
                 viewBox="0 0 48 48"
                 class="LgbsSe-Bz112c"
                 style="width: 25px; height: 25px"
+                aria-label="Logo de Google"
+                role="img"
               >
                 <g>
                   <path
@@ -212,7 +280,7 @@
               href="https://policy.pinterest.com/es/terms-of-service"
               target="_blank"
               aria-label="Entra aquí para obtener información sobre los términos del servicio de Pinterest"
-              role="a"
+              role="link"
               >Términos del servicio</a
             >
             de Pinterest y confirmas que has leído nuestra
@@ -220,7 +288,7 @@
               href="https://policy.pinterest.com/es/privacy-policy"
               target="_blank"
               aria-label="Entra aquí para obtener información sobre la política de privacidad de Pinterest"
-              role="a"
+              role="link"
               >Política de privacidad</a
             >.
             <span>
@@ -228,6 +296,8 @@
                 href="https://policy.pinterest.com/notice-at-collection"
                 rel="noopener noreferrer"
                 target="_blank"
+                aria-label="Entra aquí para obtener información sobre la política de privacidad de Pinterest"
+                role="link"
                 >Aviso de recopilación de datos</a
               >
             </span>
@@ -243,16 +313,16 @@
               href="https://policy.pinterest.com/es/terms-of-service"
               target="_blank"
               aria-label="Entra aquí para obtener información sobre los términos del servicio de Pinterest"
-              role="a"
-            ></a
-            >Términos del servicio
+              role="link"
+              >Términos del servicio</a
+            >
           </li>
           <li>
             <a
               href="https://policy.pinterest.com/es/privacy-policy"
               target="_blank"
               aria-label="Entra aquí para obtener información sobre la política de privacidad de Pinterest"
-              role="a"
+              role="link"
               >Política de privacidad</a
             >
           </li>
@@ -261,7 +331,7 @@
               href="https://help.pinterest.com/es"
               target="_blank"
               aria-label="Entra aquí para saber cómo usar Pinterest"
-              role="a"
+              role="link"
               >Ayuda</a
             >
           </li>
@@ -270,7 +340,7 @@
               href="https://apps.apple.com/us/app/pinterest/id429047995"
               target="_blank"
               aria-label="Entra aquí para descargarte la app de Pinterest para dispositivos IPhone a través de la Apple Store"
-              role="a"
+              role="link"
               >Aplicación para IPhone</a
             >
           </li>
@@ -279,7 +349,7 @@
               href="https://play.google.com/store/apps/details?id=com.pinterest&pli=1"
               target="_blank"
               aria-label="Entra aquí para descargarte la app de Pinterest para dispositivos Android a través de la Google Play Store"
-              role="a"
+              role="link"
               >Aplicación para Android</a
             >
           </li>
@@ -288,7 +358,7 @@
               href="https://www.pinterest.es/html_sitemap/pinners_a.html"
               target="_blank"
               aria-label="Entra aquí para ver la lista de usuarios que usan Pinterest actualmente"
-              role="a"
+              role="link"
               >Usuarios</a
             >
           </li>
@@ -297,7 +367,7 @@
               href="https://www.pinterest.es/html_sitemap/boards_a.html"
               target="_blank"
               aria-label="Entra aquí para ver la lista de colecciones que existen en Pinterest actualmente"
-              role="a"
+              role="link"
               >Colecciones</a
             >
           </li>
@@ -306,7 +376,7 @@
               href="https://www.pinterest.es/html_sitemap/shopping_0.html"
               target="_blank"
               aria-label="Entra aquí para ver la lista de compras registradas en Pinterest hasta ahora"
-              role="a"
+              role="link"
               >Compras</a
             >
           </li>
@@ -315,7 +385,7 @@
               href="https://www.pinterest.es/today/"
               target="_blank"
               aria-label="Entra aquí para ver las tendencias actuales en Pinterest"
-              role="a"
+              role="link"
               >Hoy</a
             >
           </li>
@@ -324,7 +394,7 @@
               href="https://www.pinterest.es/ideas/"
               target="_blank"
               aria-label="Entra aquí para explorar las mejores ideas de Pinterest"
-              role="a"
+              role="link"
               >Explorar</a
             >
           </li>
